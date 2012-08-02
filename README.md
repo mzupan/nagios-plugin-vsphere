@@ -1,4 +1,4 @@
-# Nagios-MongoDB
+# Nagios-Vsphere
 
 ## Overview
 
@@ -32,7 +32,7 @@ Edit your commands.cfg and add the following
 <pre><code>
 define command {
     command_name    check_vsphere
-    command_line    $USER1$/nagios-plugin-vsphere/check_mongodb.py -H $HOSTADDRESS$ -A $ARG1$ -u $ARG2$ -p $ARG3$ -W $ARG4$ -C $ARG5$ 
+    command_line    $USER1$/nagios-plugin-vsphere/check_vsphere.py -H $HOSTADDRESS$ -A $ARG1$ -u $ARG2$ -p $ARG3$ -W $ARG4$ -C $ARG5$ 
 }
 </code></pre>
 
